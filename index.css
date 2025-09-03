@@ -134,7 +134,7 @@ footer {
     display: inline-block;
     background-color: #0d6efd; /* bleu Bootstrap */
     color: white;
-    text-decoration: none;
+    text-decoration: none; /* enlève le soulignement */
     padding: 10px 20px;
     border-radius: 30px;
     font-size: 1rem;
@@ -144,8 +144,10 @@ footer {
 .btn-retour:hover {
     background-color: #0b5ed7; /* bleu plus foncé */
     transform: scale(1.05);
+    text-decoration: none; /* évite le retour du soulignement */
 }
 
 .btn-retour:active {
     transform: scale(0.95);
+    text-decoration: none;
 }
