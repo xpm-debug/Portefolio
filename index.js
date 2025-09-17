@@ -41,11 +41,5 @@ document.getElementById('showPart2').addEventListener('click', function() {
 });
 
 
-const darkModeToggle = document.getElementById('darkModeToggle');
-darkModeToggle.addEventListener('change', function() {
-    document.body.classList.toggle('dark-mode');
-    const cards = document.querySelectorAll('.card');
-    cards.forEach(card => card.classList.toggle('dark-mode'));
-});
 
 
