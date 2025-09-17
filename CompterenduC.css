@@ -40,19 +40,19 @@ body {
     color: black;
 }
 
-/* Style des cartes */
-.project-card {
-    transition: transform 0.3s;
-    height: 100%;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-}
 
 .card-img-top {
     height: 200px;
     object-fit: cover;
+}
+
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* Style de la barre de recherche */
@@ -132,6 +132,7 @@ body {
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
     transform: translateY(0);
 }
+
 
 
 
