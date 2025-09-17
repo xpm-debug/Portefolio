@@ -6,9 +6,20 @@ body {
 }
 
 .hero-section {
-    padding: 50px 0;
-    background-color: #0d6efd;
+    padding: 100px 0;
     color: white;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.hero-section h1,
+.hero-section .lead {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .profile-img {
@@ -121,3 +132,4 @@ body {
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
     transform: translateY(0);
 }
+
