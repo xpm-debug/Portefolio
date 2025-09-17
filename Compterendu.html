@@ -31,7 +31,36 @@
             </h2>
             <!-- Recherche -->
             <style>
+            /* Style de la barre de recherche */
+            .search-bar {
+              max-width: 500px;
+              margin: auto;
             }
+            .search-input {
+              border-radius: 50px 0 0 50px;
+              border-right: none;
+            }
+            .search-btn {
+              border-radius: 0 50px 50px 0;
+              background-color: #0d6efd;
+              color: white;
+            }
+            .search-btn:hover {
+              background-color: #0b5ed7;
+              color: white;
+            }
+          </style>
+        </head>
+        <body>
+
+  <!-- Navbar avec barre de recherche -->
+    <div class="container-fluid justify-content-center">
+      <form class="d-flex search-bar w-100">
+        <input id="searchBar" class="form-control search-input" type="search" placeholder="Rechercher un compte rendu..." aria-label="Search">
+        <button class="btn search-btn" type="button"><i class="fas fa-search"></i></button>
+      </form>
+    </div>
+  </nav>
             .search-btn {
               border-radius: 0 50px 50px 0;
               background-color: #0d6efd;
@@ -188,6 +217,7 @@
   </script>
 </body>
 </html>
+
 
 
 
