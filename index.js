@@ -48,18 +48,4 @@ darkModeToggle.addEventListener('change', function() {
     cards.forEach(card => card.classList.toggle('dark-mode'));
 });
 
-/* CSS pour le mode sombre */
-.dark-mode {
-    background-color: #121212;
-    color: #e0e0e0;
-}
 
-.dark-mode .card {
-    background-color: #1e1e1e;
-    color: #e0e0e0;
-    border: 1px solid #333;
-}
-
-.dark-mode .section-title {
-    color: #bb86fc;
-}
