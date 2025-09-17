@@ -112,13 +112,13 @@ body {
 }
 
 #showPart2 {
-    background-color: #e74c3c; /* Rouge professionnel */
+    background-color: #2c3e50; /* Rouge professionnel */
     color: white;
 }
 
 /* Effet au survol */
 #showPart1:hover {
-    background-color: #1a252f; /* Bleu encore plus foncé */
+    background-color: #0d6efd; /* Bleu encore plus foncé */
     transform: translateY(-2px); /* Légère élévation */
 }
 
@@ -132,5 +132,6 @@ body {
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
     transform: translateY(0);
 }
+
 
 
