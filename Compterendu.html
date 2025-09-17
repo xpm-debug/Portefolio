@@ -29,9 +29,39 @@
         <div class="container">
             <h2 class="section-title">Mes compte rendu
             </h2>
-            <div class="container py-4">
-            <input id="searchBar" type="text" class="form-control" placeholder="Rechercher un compte rendu...">
-            </div>
+            <!-- Recherche -->
+            <style>
+            .search-bar {
+              max-width: 500px;
+              margin: auto;
+            }
+            .search-input {
+              border-radius: 50px 0 0 50px;
+              border-right: none;
+            }
+            .search-btn {
+              border-radius: 0 50px 50px 0;
+              background-color: #0d6efd;
+              color: white;
+            }
+            .search-btn:hover {
+              background-color: #0b5ed7;
+              color: white;
+            }
+          </style>
+
+  <!-- Navbar avec barre de recherche -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid justify-content-center">
+      <form class="d-flex search-bar w-100">
+        <input id="searchBar" class="form-control search-input" type="search" placeholder="Rechercher un compte rendu..." aria-label="Search">
+        <button class="btn search-btn" type="button"><i class="fas fa-search"></i></button>
+      </form>
+    </div>
+  </nav>
+
+
+            
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <div class="card project-card">
@@ -165,6 +195,7 @@
   </script>
 </body>
 </html>
+
 
 
 
