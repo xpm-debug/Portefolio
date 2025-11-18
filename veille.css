@@ -6,7 +6,7 @@ body {
 }
 
 .hero-section {
-    padding: 100px 0;
+    padding: 10px 0;
     color: white;
     text-align: center;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -129,3 +129,4 @@ body {
 .btn-retour:hover {
     background-color: #0b5ed7;
 }
+
