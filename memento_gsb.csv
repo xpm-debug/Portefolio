@@ -1,0 +1,10 @@
+Terme;Catégorie;Définition;Contexte;Date
+"BIOS";"Logiciel";"Logiciel intégré à la carte mère d'un ordinateur, responsable de l'initialisation du matériel et du démarrage du système d'exploitation.";"";"19/11/2025"
+"RAM";"Matériel";"Random Access Memory. Mémoire vive de l'ordinateur, utilisée pour exécuter des programmes et des tâches en temps réel.";"";"19/11/2025"
+"SSD";"Matériel";"Solid State Drive. Type de stockage utilisant de la mémoire flash, plus rapide et plus résistant que les disques durs traditionnels (HDD).";"";"19/11/2025"
+"Proxy";"Réseau";"Serveur intermédiaire entre un utilisateur et Internet, permettant de filtrer les requêtes, de mettre en cache des données et d'améliorer la sécurité.";"";"19/11/2025"
+"WiFi 6";"Réseau";"Norme de réseau sans fil (802.11ax) offrant des débits plus élevés, une meilleure gestion des appareils connectés et une consommation d'énergie optimisée.";"";"19/11/2025"
+"BitLocker";"Sécurité";"Outil de chiffrement intégré à Windows, permettant de chiffrer l'intégralité d'un disque dur pour protéger les données.";"";"19/11/2025"
+"Chiffrement";"Sécurité";"Processus de transformation des données en un code illisible sans une clé de déchiffrement, afin de protéger leur confidentialité.";"";"19/11/2025"
+"FileVault";"Sécurité";"Outil de chiffrement intégré à macOS, permettant de chiffrer le disque dur pour protéger les données.";"";"19/11/2025"
+"VPN";"Sécurité";"Un VPN est une technologie qui permet de créer une connexion sécurisée et chiffrée entre un appareil (ordinateur, smartphone, tablette) et un réseau privé (comme celui d'une entreprise)";"";"19/11/2025"
