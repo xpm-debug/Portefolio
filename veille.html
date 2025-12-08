@@ -9,100 +9,65 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Votre CSS externe -->
-    <link rel="stylesheet" href="veille.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Section Accueil -->
-    <section class="hero-section text-center">
-        <div class="container">
-            <img src="myphoto.jpg" alt="Xavier Sionnet" class="profile-img">
+    <section class="hero-section">
+        <div class="container py-5">
+            <img src="path_to_your_image.jpg" alt="Xavier Sionnet" class="profile-img">
             <h1>Xavier Sionnet</h1>
-            <p class="lead">Veille Technologique | Étudiant en informatique | Passionné par l'innovation</p>
+            <p class="lead">Veille Technologique</p>
         </div>
     </section>
 
-    <!-- Section Veille Technologique -->
-    <section class="veille-section">
-        <div class="container">
-            <h2 class="section-title">Ma Veille Technologique</h2>
+    <section class="container veille-section">
+        <h2 class="section-title">Ma Veille Technologique</h2>
 
-            <!-- Barre de recherche -->
-            <div class="d-flex justify-content-center search-veille">
-                <form class="d-flex w-100">
-                    <input id="searchVeille" class="form-control" type="search" placeholder="Rechercher une info...">
-                    <button class="btn" type="button"><i class="fas fa-search"></i></button>
-                </form>
-            </div>
-
-            <!-- Tableau de veille -->
-            <div class="table-responsive veille-table">
-                <table class="table table-hover">
-                    <thead>
-                        <tr>
-                            <th>Date</th>
-                            <th>Sujet</th>
-                            <th>Description</th>
-                            <th>Catégorie</th>
-                            <th>Outil</th>
-                            <th>Source</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- Exemple de ligne -->
-                     <tr>
-<td>2025-02-11</td>
-<td>L’impact environnemental de l’IA générative</td>
-<td>L’essor de l’IA générative (comme ChatGPT) s’accompagne d’une inquiétude croissante sur son empreinte environnementale.</td>
-<td><span class="tag tag-ia">🤖 IA</span></td>
-<td><a href="https://www.notretemps.com/depeches/lancement-d-une-coalition-pour-une-ia-plus-sobre-108296" target="_blank">Lien</a></td>
-<td>Google</td>
-</tr>
-<tr>
-<td>2025-11</td>
-<td>Règles du RGPD pour faciliter l'entraînement</td>
-<td>L’Union européenne envisage d’assouplir certaines règles du RGPD pour faciliter l’entraînement des modèles d’IA sur des données personnelles, sans consentement explicite, si le traitement est justifié par un "intérêt légitime" et assorti de garanties strictes.</td>
-<td><span class="tag tag-ia">⚖️ Loi</span></td>
-<td><a href="https://www.freenews.fr/regulation/reforme-rgpd-ia-2025-europe" target="_blank">Lien</a></td>
-<td>Google</td>
-</tr>
-<tr>
-<td>2025-11-19</td>
-<td>Assouplissement du RGPD pour l'entraînement des IA</td>
-<td>La Commission européenne propose d'autoriser l'utilisation de données personnelles pour entraîner des modèles d'IA sur la base de l'intérêt légitime, sans consentement explicite, accompagnée de garanties strictes de transparence et de minimisation.</td>
-<td><span class="tag tag-ia">⚖️ Loi</span></td>
-<td><a href="https://www.ansa.it/english/news/world/2025/11/24/eu-proposes-relaxing-privacy-rules-for-ai-development_29195b69-42cd-40f6-af4b-48721723711e.html" target="_blank">Lien</a></td>
-<td>ANSA / Commission européenne</td>
-</tr>
-<tr>
-                        <!-- Copiez/collez ce bloc pour ajouter une nouvelle ligne -->
-                        <!--
-                        <tr>
-                            <td>AAAA-MM-JJ</td>
-                            <td>Titre du sujet</td>
-                            <td>Description du sujet</td>
-                            <td><span class="tag tag-ia">🤖 IA</span></td>
-                            <td><a href="LIEN_VERS_LA_SOURCE" target="_blank">Lien</a></td>
-                            <td>Source</td>
-                            <td>
-                                <button class="btn btn-sm btn-outline-danger"><i class="fas fa-trash"></i></button>
-                            </td>
-                        </tr>
-                        -->
-                    </tbody>
-                </table>
-            </div>
+        <div class="search-veille input-group mb-3">
+            <input type="text" class="form-control" placeholder="Rechercher...">
+            <button class="btn btn-primary" type="button">Rechercher</button>
         </div>
+
+        <table class="table veille-table">
+            <thead>
+                <tr>
+                    <th>Titre</th>
+                    <th>Catégorie</th>
+                    <th>Date</th>
+                    <th>Source</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>L'impact de l'IA sur les métiers du développement web</td>
+                    <td><span class="tag tag-ia">IA</span></td>
+                    <td>15/11/2025</td>
+                    <td><a href="#">Lire plus</a></td>
+                </tr>
+                <tr>
+                    <td>Les dernières vulnérabilités en cybersécurité</td>
+                    <td><span class="tag tag-cyber">Cybersécurité</span></td>
+                    <td>10/11/2025</td>
+                    <td><a href="#">Lire plus</a></td>
+                </tr>
+                <tr>
+                    <td>Nouveautés dans les frameworks JavaScript</td>
+                    <td><span class="tag tag-dev">Développement</span></td>
+                    <td>05/11/2025</td>
+                    <td><a href="#">Lire plus</a></td>
+                </tr>
+                <tr>
+                    <td>Évolution des réseaux 5G et 6G</td>
+                    <td><span class="tag tag-reseau">Réseau</span></td>
+                    <td>01/11/2025</td>
+                    <td><a href="#">Lire plus</a></td>
+                </tr>
+            </tbody>
+        </table>
     </section>
 
-    <!-- Bouton Retour -->
-    <div class="text-center my-4">
-        <a href="index.html" class="btn-retour">← Retour</a>
+    <div class="container text-center my-4">
+        <a href="#" class="btn-retour">Retour</a>
     </div>
-
-    <!-- Bootstrap 5 JS (optionnel) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
-
-
