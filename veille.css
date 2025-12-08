@@ -54,13 +54,15 @@ body {
     background-color: #2c3e50;
     color: white;
     text-align: center;
-    padding: 12px;
+    padding: 15px;
+    font-size: 1.1em;
 }
 
 .veille-table td {
-    padding: 12px;
+    padding: 15px;
     vertical-align: middle;
-    text-align: center;
+    text-align: left;
+    min-width: 150px;
 }
 
 /* Tags de catégorie */
