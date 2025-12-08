@@ -12,63 +12,99 @@
     <link rel="stylesheet" href="veille.css">
 </head>
 <body>
-    <section class="hero-section">
-        <div class="container py-5">
-            <img src="path_to_your_image.jpg" alt="Xavier Sionnet" class="profile-img">
+    <!-- Section Accueil -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <img src="myphoto.jpg" alt="Xavier Sionnet" class="profile-img">
             <h1>Xavier Sionnet</h1>
-            <p class="lead">Veille Technologique</p>
+            <p class="lead">Veille Technologique | Étudiant en informatique | Passionné par l'innovation</p>
         </div>
     </section>
 
-    <section class="container veille-section">
-        <h2 class="section-title">Ma Veille Technologique</h2>
+    <!-- Section Veille Technologique -->
+    <section class="veille-section">
+        <div class="container">
+            <h2 class="section-title">Ma Veille Technologique</h2>
 
-        <div class="search-veille input-group mb-3">
-            <input type="text" class="form-control" placeholder="Rechercher...">
-            <button class="btn btn-primary" type="button">Rechercher</button>
+            <!-- Barre de recherche -->
+            <div class="d-flex justify-content-center search-veille">
+                <form class="d-flex w-100">
+                    <input id="searchVeille" class="form-control" type="search" placeholder="Rechercher une info...">
+                    <button class="btn" type="button"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+
+            <!-- Tableau de veille -->
+            <div class="table-responsive">
+                <table class="table table-hover veille-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Sujet</th>
+                            <th>Description</th>
+                            <th>Catégorie</th>
+                            <th>Outil</th>
+                            <th>Source</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>15/11/2025</td>
+                            <td>L'impact de l'IA sur les métiers du développement web</td>
+                            <td>
+                                L'intelligence artificielle révolutionne le développement web en automatisant des tâches répétitives,
+                                comme la génération de code ou la détection de bugs. Des outils comme GitHub Copilot permettent
+                                aux développeurs de gagner du temps et de se concentrer sur des aspects plus créatifs.
+                            </td>
+                            <td><span class="tag tag-ia">IA</span></td>
+                            <td>GitHub Copilot</td>
+                            <td><a href="#">Lire plus</a></td>
+                        </tr>
+                        <tr>
+                            <td>10/11/2025</td>
+                            <td>Les dernières vulnérabilités en cybersécurité</td>
+                            <td>
+                                Une nouvelle faille critique a été découverte dans plusieurs systèmes d'exploitation,
+                                permettant à des attaquants de prendre le contrôle à distance. Les entreprises sont invitées
+                                à appliquer les correctifs de sécurité dès que possible pour éviter les intrusions.
+                            </td>
+                            <td><span class="tag tag-cyber">Cybersécurité</span></td>
+                            <td>Nessus</td>
+                            <td><a href="#">Lire plus</a></td>
+                        </tr>
+                        <tr>
+                            <td>05/11/2025</td>
+                            <td>Nouveautés dans les frameworks JavaScript</td>
+                            <td>
+                                La dernière version de React introduit des améliorations significatives en termes de performance
+                                et de facilité d'utilisation. Les développeurs peuvent désormais utiliser des hooks plus puissants
+                                pour gérer l'état de leurs applications de manière plus efficace.
+                            </td>
+                            <td><span class="tag tag-dev">Développement</span></td>
+                            <td>React</td>
+                            <td><a href="#">Lire plus</a></td>
+                        </tr>
+                        <tr>
+                            <td>01/11/2025</td>
+                            <td>Évolution des réseaux 5G et 6G</td>
+                            <td>
+                                Les réseaux 5G continuent de se déployer à travers le monde, offrant des vitesses de connexion
+                                sans précédent. Les recherches sur la 6G ont déjà commencé, promettant des avancées encore plus
+                                impressionnantes, comme des latences quasi nulles et une connectivité omniprésente.
+                            </td>
+                            <td><span class="tag tag-reseau">Réseau</span></td>
+                            <td>Wireshark</td>
+                            <td><a href="#">Lire plus</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-
-        <table class="table veille-table">
-            <thead>
-                <tr>
-                    <th>Titre</th>
-                    <th>Catégorie</th>
-                    <th>Date</th>
-                    <th>Source</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>L'impact de l'IA sur les métiers du développement web</td>
-                    <td><span class="tag tag-ia">IA</span></td>
-                    <td>15/11/2025</td>
-                    <td><a href="#">Lire plus</a></td>
-                </tr>
-                <tr>
-                    <td>Les dernières vulnérabilités en cybersécurité</td>
-                    <td><span class="tag tag-cyber">Cybersécurité</span></td>
-                    <td>10/11/2025</td>
-                    <td><a href="#">Lire plus</a></td>
-                </tr>
-                <tr>
-                    <td>Nouveautés dans les frameworks JavaScript</td>
-                    <td><span class="tag tag-dev">Développement</span></td>
-                    <td>05/11/2025</td>
-                    <td><a href="#">Lire plus</a></td>
-                </tr>
-                <tr>
-                    <td>Évolution des réseaux 5G et 6G</td>
-                    <td><span class="tag tag-reseau">Réseau</span></td>
-                    <td>01/11/2025</td>
-                    <td><a href="#">Lire plus</a></td>
-                </tr>
-            </tbody>
-        </table>
     </section>
 
+    <!-- Bouton Retour -->
     <div class="container text-center my-4">
         <a href="#" class="btn-retour">Retour</a>
     </div>
 </body>
 </html>
-
