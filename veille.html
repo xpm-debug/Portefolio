@@ -9,7 +9,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Votre CSS externe -->
-    <link rel="stylesheet" href="veille.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Section Accueil -->
@@ -37,14 +37,16 @@
             <!-- Tableau de veille -->
             <div class="table-responsive">
                 <table class="table table-hover veille-table">
-                    <thead>
+                    <thead class="table-dark">
                         <tr>
                             <th>Date</th>
                             <th>Sujet</th>
                             <th>Description</th>
+                            <th>Impact</th>
                             <th>Catégorie</th>
-                            <th>Outil</th>
+                            <th>Outil/Technologie</th>
                             <th>Source</th>
+                            <th>Lien</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -53,24 +55,36 @@
                             <td>L'impact de l'IA sur les métiers du développement web</td>
                             <td>
                                 L'intelligence artificielle révolutionne le développement web en automatisant des tâches répétitives,
-                                comme la génération de code ou la détection de bugs. Des outils comme GitHub Copilot permettent
-                                aux développeurs de gagner du temps et de se concentrer sur des aspects plus créatifs.
+                                comme la génération de code ou la détection de bugs. Les outils d'IA permettent aux développeurs
+                                de se concentrer sur des aspects plus créatifs et stratégiques.
+                            </td>
+                            <td>
+                                Réduction du temps de développement, amélioration de la qualité du code,
+                                et augmentation de la productivité des équipes.
                             </td>
                             <td><span class="tag tag-ia">IA</span></td>
-                            <td>GitHub Copilot</td>
-                            <td><a href="#">Lire plus</a></td>
+                            <td>GitHub Copilot, TabNine</td>
+                            <td>TechCrunch</td>
+                            <td><a href="https://www.natural-net.fr/blog-agence-web/2025/02/13/intelligence-artificielle-revolution-et-transformation-digitale-du-web-en-2025.html
+
+
+" target="_blank">Lire plus</a></td>
                         </tr>
                         <tr>
                             <td>10/11/2025</td>
                             <td>Les dernières vulnérabilités en cybersécurité</td>
                             <td>
-                                Une nouvelle faille critique a été découverte dans plusieurs systèmes d'exploitation,
-                                permettant à des attaquants de prendre le contrôle à distance. Les entreprises sont invitées
-                                à appliquer les correctifs de sécurité dès que possible pour éviter les intrusions.
+                                Une faille critique a été découverte dans les systèmes d'exploitation populaires,
+                                permettant à des attaquants d'exécuter du code à distance. Les entreprises sont invitées
+                                à appliquer les correctifs de sécurité dès que possible.
+                            </td>
+                            <td>
+                                Risque élevé d'intrusions et de fuites de données sensibles si les correctifs ne sont pas appliqués.
                             </td>
                             <td><span class="tag tag-cyber">Cybersécurité</span></td>
-                            <td>Nessus</td>
-                            <td><a href="#">Lire plus</a></td>
+                            <td>Nessus, Metasploit</td>
+                            <td>CERT-FR</td>
+                            <td><a href="https://www.advens.com/media/securite-operationnelle/cybersecurite-quelles-perspectives-en-2025/" target="_blank">Lire plus</a></td>
                         </tr>
                         <tr>
                             <td>05/11/2025</td>
@@ -80,9 +94,14 @@
                                 et de facilité d'utilisation. Les développeurs peuvent désormais utiliser des hooks plus puissants
                                 pour gérer l'état de leurs applications de manière plus efficace.
                             </td>
+                            <td>
+                                Meilleure performance des applications web, réduction des bugs liés à la gestion d'état,
+                                et amélioration de l'expérience utilisateur.
+                            </td>
                             <td><span class="tag tag-dev">Développement</span></td>
-                            <td>React</td>
-                            <td><a href="#">Lire plus</a></td>
+                            <td>React, Next.js</td>
+                            <td>Medium</td>
+                            <td><a href="https://webtech.fr/blog/top-frameworks-javascript/" target="_blank">Lire plus</a></td>
                         </tr>
                         <tr>
                             <td>01/11/2025</td>
@@ -92,9 +111,14 @@
                                 sans précédent. Les recherches sur la 6G ont déjà commencé, promettant des avancées encore plus
                                 impressionnantes, comme des latences quasi nulles et une connectivité omniprésente.
                             </td>
+                            <td>
+                                Amélioration de la connectivité mobile, développement de nouvelles applications nécessitant
+                                une faible latence, et préparation pour l'Internet des objets (IoT) à grande échelle.
+                            </td>
                             <td><span class="tag tag-reseau">Réseau</span></td>
-                            <td>Wireshark</td>
-                            <td><a href="#">Lire plus</a></td>
+                            <td>Wireshark, 5G NR</td>
+                            <td>IEEE Spectrum</td>
+                            <td><a href="https://www.itpro.fr/de-la-5g-a-la-6g-la-france-se-positionne-pour-dominer-les-reseaux-du-futur" target="_blank">Lire plus</a></td>
                         </tr>
                     </tbody>
                 </table>
