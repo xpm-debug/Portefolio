@@ -3,6 +3,8 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
     color: #333;
+    margin: 0;
+    padding: 0;
 }
 
 .hero-section {
@@ -16,9 +18,7 @@ body {
     background-repeat: no-repeat;
 }
 
-
-.hero-section h1,
-.hero-section .lead {
+.hero-section h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
@@ -28,6 +28,7 @@ body {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 20px;
+    border: 3px solid white;
 }
 
 .section {
@@ -38,21 +39,6 @@ body {
     text-align: center;
     margin-bottom: 40px;
     color: black;
-}
-
-
-.card-img-top {
-    height: 200px;
-    object-fit: cover;
-}
-
-.project-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* Style de la barre de recherche */
@@ -92,47 +78,42 @@ body {
     background-color: #0b5ed7;
 }
 
-
 /* Style des boutons Partie 1 et Partie 2 */
 #showPart1, #showPart2 {
     padding: 12px 24px;
     margin: 0 10px;
     border: none;
-    border-radius: 30px; /* Coins arrondis */
+    border-radius: 30px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
-}
-
-/* Couleurs distinctes pour chaque bouton */
-#showPart1 {
-    background-color: #2c3e50; /* Bleu foncé professionnel */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #2c3e50;
     color: white;
 }
 
-#showPart2 {
-    background-color: #2c3e50; /* Rouge professionnel */
-    color: white;
+#showPart1:hover, #showPart2:hover {
+    background-color: #0d6efd;
+    transform: translateY(-2px);
 }
 
-/* Effet au survol */
-#showPart1:hover {
-    background-color: #0d6efd; /* Bleu encore plus foncé */
-    transform: translateY(-2px); /* Légère élévation */
-}
-
-#showPart2:hover {
-    background-color: #0d6efd; /* Rouge plus foncé */
-    transform: translateY(-2px); /* Légère élévation */
-}
-
-/* Style du bouton actif (optionnel) */
 #showPart1.active, #showPart2.active {
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
     transform: translateY(0);
 }
 
+/* Style des cartes */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
 
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+}
 
-
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
