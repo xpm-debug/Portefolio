@@ -1,466 +1,294 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xavier Sionnet | Compte Rendu</title>
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome pour les icônes -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Mon CSS -->
-    <link rel="stylesheet" href="CompterenduC.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Xavier Sionnet | Compte rendu</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="CompterenduC.css">
 </head>
+
 <body>
-    <!-- Section Accueil -->
-    <section class="hero-section text-center">
-        <div class="container">
-            <img src="myphoto.jpg"
-                 alt="Xavier Sionnet" class="profile-img">
-            <h1>Xavier Sionnet</h1>
-            <p class="lead">Étudiant en informatique | Réserviste militaire | Passionné par la technologie et l'innovation</p>
-        </div>
-    </section>
 
-    <!-- Section Compte rendu -->
-    <section id="projects" class="section">
-        <div class="container">
-            <h2 class="section-title">Mes comptes rendus</h2>
-
-            <!-- Boutons pour filtrer les parties -->
-            <div class="d-flex justify-content-center mb-4">
-                <button id="showPart1" class="btn btn-primary me-2 active">Partie 1 : Beauvallet</button>
-                <button id="showPart2" class="btn btn-primary">Partie 2 : Sotoca</button>
-            </div>
-
-
-            <!-- Partie 1 : Beauvallet -->
-            <div id="part1" class="row">
-                <!-- Code.org -->
-                <div class="col-md-4 mb-4">
-                    <div class="card project-card">
-                        <img src="https://yt3.googleusercontent.com/ytc/AIdro_n4k0wKZLq25_sCfof3HIOR_Bm0YAhiXfdYwXfG-96OHA=s900-c-k-c0x00ffffff-no-rj" class="card-img-top" alt="Code.org">
-                        <div class="card-body">
-                            <h5 class="card-title">Code.org</h5>
-                            <a href="TP1.pdf" target="_blank" class="btn btn-primary">Voir le compte rendu</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Site Web -->
-                <div class="col-md-4 mb-4">
-                    <div class="card project-card">
-                        <img src="Portfolio.png" class="card-img-top" alt="Site Web">
-                        <div class="card-body">
-                            <h5 class="card-title">Site Web</h5>
-                            <a href="TP3.pdf" target="_blank" class="btn btn-primary">Voir le compte rendu</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Début HTML -->
-                <div class="col-md-4 mb-4">
-                    <div class="card project-card">
-                        <img src="https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Fkinsta.com%2Ffr%2Fblog%2Fapprendre-le-html%2F&opi=89978449" class="card-img-top" alt="Début HTML">
-                        <div class="card-body">
-                            <h5 class="card-title">Début HTML</h5>
-                            <a href="TP5.pdf" target="_blank" class="btn btn-primary">Voir le compte rendu</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Début/Suite CSS -->
-                <div class="col-md-4 mb-4">
-                    <div class="card project-card">
-                        <img src="https://wproom.com/wp-content/uploads/2024/01/css.png" class="card-img-top" alt="Début CSS">
-                        <div class="card-body">
-                            <h5 class="card-title">Début/Suite CSS</h5>
-                            <a href="TP8.pdf" target="_blank" class="btn btn-primary">Voir le compte rendu</a>
-                            <a href="Chuck.n.zip" target="_blank" class="btn btn-primary">Voir le Zip</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- JS exo -->
-                <div class="col-md-4 mb-4">
-                    <div class="card project-card">
-                        <img src="https://cdn2.happy-garden.fr/_quable_/happy-garden/0285ff6f-7216-4ffe-92d9-front/original/CHA12B-1-01ambiance.jpg?p=large" class="card-img-top" alt="JS exo">
-                        <div class="card-body">
-                            <h5 class="card-title">JS exo</h5>
-                            <a href="TP9.pdf" target="_blank" class="btn btn-primary">Voir le compte rendu</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Début Java -->
-                <div class="col-md-4 mb-4">
-                    <div class="card project-card">
-                        <img src="https://midias.inforchannel.com.br/wp-content/uploads/2021/03/e2d2f80e-java-logo-1-1024x573.png" class="card-img-top" alt="Début Java">
-                        <div class="card-body">
-                            <h5 class="card-title">Début Java</h5>
-                            <a href="TP4.pdf" target="_blank" class="btn btn-primary">Voir le compte rendu</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- CSS avancées -->
-                <div class="col-md-4 mb-4">
-                    <div class="card project-card">
-                        <img src="https://iamvdo.me/content/01-blog/30-css-avance-metriques-des-fontes-line-height-et-vertical-align/font-size-line-height.png" class="card-img-top" alt="CSS avancées">
-                        <div class="card-body">
-                            <h5 class="card-title">CSS avancées</h5>
-                            <a href="TP10.pdf" target="_blank" class="btn btn-primary">Voir le compte rendu</a>
-                            <a href="Chuck.nV01.zip" target="_blank" class="btn btn-primary">Voir le Zip</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Cyber centercall -->
-                <div class="col-md-4 mb-4">
-                    <div class="card project-card">
-                        <img src="https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Ffr.wikipedia.org%2Fwiki%2FT%25C3%25A9l%25C3%25A9phone_mobile&opi=89978449" class="card-img-top" alt="Cyber centercall">
-                        <div class="card-body">
-                            <h5 class="card-title">Cyber centercall</h5>
-                            <a href="TP11.pdf" target="_blank" class="btn btn-primary">Voir le compte rendu</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Chifoumi -->
-                <div class="col-md-4 mb-4">
-                    <div class="card project-card">
-                        <img src="https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Fwww.socialshaker.com%2Fproject%2Fchifoumi%2F&opi=89978449" class="card-img-top" alt="Chifoumi">
-                        <div class="card-body">
-                            <h5 class="card-title">Chifoumi</h5>
-                            <a href="chifoumi.pdf" target="_blank" class="btn btn-primary">Voir le compte rendu</a>
-                            <a href="shifumi.zip" target="_blank" class="btn btn-primary">Voir le code</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- CSS html 2/2 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card project-card">
-                        <img src="https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Flearn-html-and-css-from-beginning-to-advanced%2F%3Fsrsltid%3DAfmBOoroTskKWbBnl1VenyKzkRTddc0Kq_xf8jRO2bJzfJtQ2imprCld&opi=89978449" class="card-img-top" alt="CSS html 2/2">
-                        <div class="card-body">
-                            <h5 class="card-title">CSS html 2/2</h5>
-                            <a href="CSS2.pdf" target="_blank" class="btn btn-primary">Voir le compte rendu</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Java exo du cours -->
-                <div class="col-md-4 mb-4">
-                    <div class="card project-card">
-                        <img src="https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dvx3dPWRtFoY&opi=89978449" class="card-img-top" alt="Java exo du cours">
-                        <div class="card-body">
-                            <h5 class="card-title">Java exo du cours</h5>
-                            <a href="java_exo.pdf" target="_blank" class="btn btn-primary">Voir le compte rendu</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- PIA -->
-                <div class="col-md-4 mb-4">
-                    <div class="card project-card">
-                        <img src="https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Fthetravelersclub.boardingarea.com%2Fpakistan-international-airlines-pia-retour-en-europe-apres-une-longue-absence%2F&opi=89978449" class="card-img-top" alt="PIA">
-                        <div class="card-body">
-                            <h5 class="card-title">PIA</h5>
-                            <a href="pia1.pdf" target="_blank" class="btn btn-primary">Voir le compte rendu</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- PIA 2 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card project-card">
-                        <img src="https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Fwww.selency.fr%2Fp%2F3H89SGC1%2Fpia-2-par-salvatore-gregoretti-pour-sirrah-1974&opi=89978449" class="card-img-top" alt="PIA 2">
-                        <div class="card-body">
-                            <h5 class="card-title">PIA 2</h5>
-                            <a href="PIA2.pdf" target="_blank" class="btn btn-primary">Voir le compte rendu</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Fonction -->
-                <div class="col-md-4 mb-4">
-                    <div class="card project-card">
-                        <img src="https://m.media-amazon.com/images/I/51LZfcvMW1S.jpg" class="card-img-top" alt="Fonction">
-                        <div class="card-body">
-                            <h5 class="card-title">Fonction</h5>
-                            <a href="TPfonction.pdf" target="_blank" class="btn btn-primary">Voir le compte rendu</a>
-                            <a href="Javafonction.zip" target="_blank" class="btn btn-primary">Voir le code</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Formulaire -->
-                <div class="col-md-4 mb-4">
-                    <div class="card project-card">
-                        <img src="https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Fblog.elloha.com%2F2019%2F02%2F09%2Fle-formulaire-de-contact-cet-ami-qui-ne-vous-sert-a-rien%2F&opi=89978449" class="card-img-top" alt="Formulaire">
-                        <div class="card-body">
-                            <h5 class="card-title">Formulaire</h5>
-                            <a href="formul.pdf" target="_blank" class="btn btn-primary">Voir le compte rendu</a>
-                            <a href="formulaire.zip" target="_blank" class="btn btn-primary">Voir le code</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- M@banque -->
-                <div class="col-md-4 mb-4">
-                    <div class="card project-card">
-                        <img src="https://im.qccdn.fr/node/guide-d-achat-banque-en-ligne-6031/thumbnail_800x480px-121286.jpg" class="card-img-top" alt="M@banque">
-                        <div class="card-body">
-                            <h5 class="card-title">M@banque</h5>
-                            <a href="cybertab.pdf" target="_blank" class="btn btn-primary">Voir le compte rendu</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Java POO -->
-                <div class="col-md-4 mb-4">
-                    <div class="card project-card">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-u67U7PG7H3OJ9MSz51P6CUFqjVKF1rgKQg&s" class="card-img-top" alt="Java POO">
-                        <div class="card-body">
-                            <h5 class="card-title">Java POO</h5>
-                            <a href="09.pdf" target="_blank" class="btn btn-primary">Voir le compte rendu</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- AnalyseSI -->
-                <div class="col-md-4 mb-4">
-                    <div class="card project-card">
-                        <img src="https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D8N8-0nMZkIM&opi=89978449" class="card-img-top" alt="AnalyseSI">
-                        <div class="card-body">
-                            <h5 class="card-title">AnalyseSI</h5>
-                            <a href="analyse.pdf" target="_blank" class="btn btn-primary">Voir le compte rendu</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- BDD Paul Lapie -->
-                <div class="col-md-4 mb-4">
-                    <div class="card project-card">
-                        <img src="https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Ffr.wikipedia.org%2Fwiki%2FLyc%25C3%25A9e_Paul-Lapie&opi=89978449" class="card-img-top" alt="BDD Paul Lapie">
-                        <div class="card-body">
-                            <h5 class="card-title">BDD Paul Lapie</h5>
-                            <a href="bdd.pdf" target="_blank" class="btn btn-primary">Voir le compte rendu</a>
-                            <a href="lycee.sql" target="_blank" class="btn btn-primary">Voir le SQL</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- TP11 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card project-card">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlVMBWpi6Tb70e92W-TicDmz7BpOVrjSBrAw&s" class="card-img-top" alt="TP11">
-                        <div class="card-body">
-                            <h5 class="card-title">TP11</h5>
-                            <a href="TP11.pdf" target="_blank" class="btn btn-primary">Voir le compte rendu</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- BDD ZOO -->
-                <div class="col-md-4 mb-4">
-                    <div class="card project-card">
-                        <img src="https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Fwww.tripadvisor.fr%2FAttraction_Review-g298555-d550329-Reviews-Guangzhou_Zoo-Guangzhou_Guangdong.html&opi=89978449" class="card-img-top" alt="BDD ZOO">
-                        <div class="card-body">
-                            <h5 class="card-title">BDD ZOO</h5>
-                            <a href="BDD ZOO.pdf" target="_blank" class="btn btn-primary">Voir le compte rendu</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- M. Brillat Veille Informationelle -->
-                <div class="col-md-4 mb-4">
-                    <div class="card project-card">
-                        <img src="https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Froulemarcel.fr%2Fmethodologie%2Ffaire-de-la-veille-cest-quoi%2F&opi=89978449" class="card-img-top" alt="M. Brillat Veille Informationelle">
-                        <div class="card-body">
-                            <h5 class="card-title">M. Brillat Veille Informationelle</h5>
-                            <a href="Xavier_Comparatif.pdf" target="_blank" class="btn btn-primary">Voir le compte rendu</a>
-                            <a href="tbl_compa.pdf" target="_blank" class="btn btn-primary">Voir le tableau</a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                    <div class="card project-card">
-                        <img src="https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Froulemarcel.fr%2Fmethodologie%2Ffaire-de-la-veille-cest-quoi%2F&opi=89978449" class="card-img-top" alt="M. Brillat Veille Informationelle">
-                        <div class="card-body">
-                            <h5 class="card-title">Audit</h5>
-                            <a href="Audit.pdf" target="_blank" class="btn btn-primary">Voir le compte rendu</a>
-                        </div>
-                    </div>
-                        <div class="col-md-4 mb-4">
-                    <div class="card project-card">
-                        <img src="https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Froulemarcel.fr%2Fmethodologie%2Ffaire-de-la-veille-cest-quoi%2F&opi=89978449" class="card-img-top" alt="M. Brillat Veille Informationelle">
-                        <div class="card-body">
-                            <h5 class="card-title">BDD SQL</h5>
-                            <a href="SQL.pdf" target="_blank" class="btn btn-primary">Voir le compte rendu</a>
-                        </div>
-                    </div>
-                            <div class="col-md-4 mb-4">
-                    <div class="card project-card">
-                        <img src="https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Froulemarcel.fr%2Fmethodologie%2Ffaire-de-la-veille-cest-quoi%2F&opi=89978449" class="card-img-top" alt="M. Brillat Veille Informationelle">
-                        <div class="card-body">
-                            <h5 class="card-title">PGP</h5>
-                            <a href="PGP.pdf" target="_blank" class="btn btn-primary">Voir le compte rendu</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Partie 2 : Sotoca -->
-            <div id="part2" class="row" style="display: none;">
-                <!-- PC en panne -->
-                <div class="col-md-4 mb-4">
-                    <div class="card project-card">
-                        <img src="https://www.abix.fr/media/cms/ABIX/2015/PJB/cable-rj45-pas-cher-cat5-utp-10m-blanc-abix.jpg" class="card-img-top" alt="PC en panne">
-                        <div class="card-body">
-                            <h5 class="card-title">PC en panne</h5>
-                            <a href="TP2.pdf" target="_blank" class="btn btn-primary">Voir le compte rendu</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Logiciel de capture -->
-                <div class="col-md-4 mb-4">
-                    <div class="card project-card">
-                        <img src="https://www.axis-solutions.fr/wp-content/uploads/2022/05/prise-en-main-a-distance-quelle-solution-choisir.jpg" class="card-img-top" alt="Logiciel de capture">
-                        <div class="card-body">
-                            <h5 class="card-title">Logiciel de capture</h5>
-                            <a href="TP6.pdf" target="_blank" class="btn btn-primary">Voir le compte rendu</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Logiciel de Diagnostic -->
-                <div class="col-md-4 mb-4">
-                    <div class="card project-card">
-                        <img src="https://img-19.commentcamarche.net/8j-JGGnt2fsVHKRrfzaJBfp5x6U=/1500x/smart/7621f0494b9d4a93a2275155748d9dc2/ccmcms-commentcamarche/26945400.jpg" class="card-img-top" alt="Logiciel de Diagnostic">
-                        <div class="card-body">
-                            <h5 class="card-title">Logiciel de Diagnostic</h5>
-                            <a href="TP7.pdf" target="_blank" class="btn btn-primary">Voir le compte rendu</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Serveur NAS -->
-                <div class="col-md-4 mb-4">
-                    <div class="card project-card">
-                        <img src="https://www.axis-solutions.fr/wp-content/uploads/2022/05/prise-en-main-a-distance-quelle-solution-choisir.jpg" class="card-img-top" alt="Serveur NAS">
-                        <div class="card-body">
-                            <h5 class="card-title">Serveur NAS</h5>
-                            <a href="nas.pdf" target="_blank" class="btn btn-primary">Voir le compte rendu</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- CMD 40 questions -->
-                <div class="col-md-4 mb-4">
-                    <div class="card project-card">
-                        <img src="https://www.valordi.com/wp-content/uploads/2024/10/35-commandes-utiles-pour-cmd-windows.jpg" class="card-img-top" alt="CMD 40 questions">
-                        <div class="card-body">
-                            <h5 class="card-title">CMD 40 questions</h5>
-                            <a href="tpsotoca.pdf" target="_blank" class="btn btn-primary">Voir le compte rendu</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Hachage -->
-                <div class="col-md-4 mb-4">
-                    <div class="card project-card">
-                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMREhMQEBIQFhISDxUSEhUVEBASFxIXFRUYFhUVFxgYICggGxolHRcVITEhJSkrMC4uFx8zODMtNygtLisBCgoKDg0OFxAPGi4lHSUrKAA//2Q==" class="card-img-top" alt="Hachage">
-                        <div class="card-body">
-                            <h5 class="card-title">Hachage</h5>
-                            <a href="TP_cyber.pdf" target="_blank" class="btn btn-primary">Voir le compte rendu</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- CMD commande -->
-                <div class="col-md-4 mb-4">
-                    <div class="card project-card">
-                        <img src="https://i.namu.wiki/i/ueOlxBhGeBQ-8ihWtIyqg2SngW-cd6aVKXYsApAkTQLvAq5Os2KQz9Dcby63nMycY0_XPE2AAkhB45nih_oOSg.webp" class="card-img-top" alt="CMD commande">
-                        <div class="card-body">
-                            <h5 class="card-title">CMD commande</h5>
-                            <a href="TP12.pdf" target="_blank" class="btn btn-primary">Voir le compte rendu</a>
-                            <a href="cartemental.pdf" target="_blank" class="btn btn-primary">Voir la carte mentale</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Cahier des charges -->
-                <div class="col-md-4 mb-4">
-                    <div class="card project-card">
-                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhUSEhIQFRUQEhUQFRUVFRCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIB//9k=" class="card-img-top" alt="Cahier des charges">
-                        <div class="card-body">
-                            <h5 class="card-title">Cahier des charges</h5>
-                            <a href="Cahier.pdf" target="_blank" class="btn btn-primary">Voir le compte rendu</a>
-                            <a href="memento_gsb.csv" target="_blank" class="btn btn-primary">Voir l'annexe</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- GSP Site -->
-                <div class="col-md-4 mb-4">
-                    <div class="card project-card">
-                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8PDw8PDQ8PDQ0NDQ8NDQ0AhCECv/2Q==" class="card-img-top" alt="GSP Site">
-                        <div class="card-body">
-                            <h5 class="card-title">GSP Site</h5>
-                            <a href="truc_vieu.pdf" target="_blank" class="btn btn-primary">Voir le compte rendu</a>
-                            <a href="GSB_Site.zip" target="_blank" class="btn btn-primary">Voir le code</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Scénario -->
-                <div class="col-md-4 mb-4">
-                    <div class="card project-card">
-                        <img src="https://www.axis-solutions.fr/wp-content/uploads/2022/05/prise-en-main-a-distance-quelle-solution-choisir.jpg" class="card-img-top" alt="Scénario">
-                        <div class="card-body">
-                            <h5 class="card-title">Scénario</h5>
-                            <a href="Scenario.pdf" target="_blank" class="btn btn-primary">Voir le compte rendu</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Disque -->
-                <div class="col-md-4 mb-4">
-                    <div class="card project-card">
-                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUSExMWFRUXFxcaGBcYFkaWi6Dv19tAhgY4fPI8PhTWQ8vh+tTFXSRpwoZG5L8+VB//9k=" class="card-img-top" alt="Disque">
-                        <div class="card-body">
-                            <h5 class="card-title">Disque</h5>
-                            <a href="Disque.pdf" target="_blank" class="btn btn-primary">Voir le compte rendu</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Hébergement -->
-                <div class="col-md-4 mb-4">
-                    <div class="card project-card">
-                        <img src="https://www.axis-solutions.fr/wp-content/uploads/2022/05/prise-en-main-a-distance-quelle-solution-choisir.jpg" class="card-img-top" alt="Hébergement">
-                        <div class="card-body">
-                            <h5 class="card-title">Hébergement</h5>
-                            <a href="herbergement.pdf" target="_blank" class="btn btn-primary">Voir le compte rendu</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Prise de contrôle -->
-                <div class="col-md-4 mb-4">
-                    <div class="card project-card">
-                        <img src="https://www.axis-solutions.fr/wp-content/uploads/2022/05/prise-en-main-a-distance-quelle-solution-choisir.jpg" class="card-img-top" alt="Prise de contrôle">
-                        <div class="card-body">
-                            <h5 class="card-title">Prise de contrôle</h5>
-                            <a href="Prise de controle.pdf" target="_blank" class="btn btn-primary">Voir le compte rendu</a>
-                        </div>
-                    </div>
-                     <div class="col-md-4 mb-4">
-                    <div class="card project-card">
-                        <img src="https://www.axis-solutions.fr/wp-content/uploads/2022/05/prise-en-main-a-distance-quelle-solution-choisir.jpg" class="card-img-top" alt="Prise de contrôle">
-                        <div class="card-body">
-                            <h5 class="card-title">Clônage</h5>
-                            <a href="clonage.pdf" target="_blank" class="btn btn-primary">Voir le compte rendu</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Bouton Retour -->
-    <div class="text-center my-4">
-        <a href="index.html" class="btn-retour">← Retour</a>
+<!-- HERO -->
+<section class="hero-section text-center py-5">
+    <div class="container">
+        <img src="images/myphoto.jpg" class="profile-img mb-3" alt="Xavier Sionnet">
+        <h1>Xavier Sionnet</h1>
+        <p class="lead">Étudiant en informatique | Réserviste militaire</p>
     </div>
+</section>
 
-    <!-- Bootstrap 5 JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- JavaScript pour la recherche et les filtres -->
-    <script>
-        document.getElementById('showPart1').addEventListener('click', function() {
-            document.getElementById('part1').style.display = 'flex';
-            document.getElementById('part2').style.display = 'none';
-            this.classList.add('active');
-            document.getElementById('showPart2').classList.remove('active');
-        });
+<section class="py-5">
+<div class="container">
 
-        document.getElementById('showPart2').addEventListener('click', function() {
-            document.getElementById('part1').style.display = 'none';
-            document.getElementById('part2').style.display = 'flex';
-            this.classList.add('active');
-            document.getElementById('showPart1').classList.remove('active');
-        });
-    </script>
+<h2 class="text-center mb-4">Mes comptes rendus</h2>
+
+<div class="text-center mb-4">
+    <button id="showPart1" class="btn btn-primary me-2">Partie 1 : Beauvallet</button>
+    <button id="showPart2" class="btn btn-primary">Partie 2 : Sotoca</button>
+</div>
+
+<!-- ================= PARTIE 1 ================= -->
+<div id="part1">
+
+<div class="row">
+
+<!-- DEV -->
+<div class="col-md-4 mb-4"><div class="card">
+<img src="images/codeorg.png" class="card-img-top">
+<div class="card-body"><h5>Code.org</h5><a href="TP1.pdf" class="btn btn-primary">Voir</a></div>
+</div></div>
+
+<div class="col-md-4 mb-4"><div class="card">
+<img src="images/siteweb.png" class="card-img-top">
+<div class="card-body"><h5>Site Web</h5><a href="TP3.pdf" class="btn btn-primary">Voir</a></div>
+</div></div>
+
+<div class="col-md-4 mb-4"><div class="card">
+<img src="images/html.png" class="card-img-top">
+<div class="card-body"><h5>HTML</h5><a href="TP5.pdf" class="btn btn-primary">Voir</a></div>
+</div></div>
+
+<div class="col-md-4 mb-4"><div class="card">
+<img src="images/css.png" class="card-img-top">
+<div class="card-body"><h5>CSS</h5>
+<a href="TP8.pdf" class="btn btn-primary">PDF</a>
+<a href="Chuck.n.zip" class="btn btn-secondary">ZIP</a>
+</div></div></div>
+
+<div class="col-md-4 mb-4"><div class="card">
+<img src="images/js.png" class="card-img-top">
+<div class="card-body"><h5>JavaScript</h5><a href="TP9.pdf" class="btn btn-primary">Voir</a></div>
+</div></div>
+
+<div class="col-md-4 mb-4"><div class="card">
+<img src="images/java.png" class="card-img-top">
+<div class="card-body"><h5>Java</h5><a href="TP4.pdf" class="btn btn-primary">Voir</a></div>
+</div></div>
+
+<div class="col-md-4 mb-4"><div class="card">
+<img src="images/chifoumi.png" class="card-img-top">
+<div class="card-body"><h5>Chifoumi</h5>
+<a href="chifoumi.pdf" class="btn btn-primary">PDF</a>
+<a href="shifumi.zip" class="btn btn-secondary">Code</a>
+</div></div></div>
+
+<!-- ANALYSE / BDD / CYBER -->
+<div class="col-md-4 mb-4"><div class="card">
+<img src="images/analyse.png" class="card-img-top">
+<div class="card-body"><h5>Analyse SI</h5><a href="analyse.pdf" class="btn btn-primary">Voir</a></div>
+</div></div>
+
+<div class="col-md-4 mb-4"><div class="card">
+<img src="images/bdd.png" class="card-img-top">
+<div class="card-body"><h5>BDD Paul Lapie</h5>
+<a href="bdd.pdf" class="btn btn-primary">PDF</a>
+<a href="lycee.sql" class="btn btn-secondary">SQL</a>
+</div></div></div>
+
+<div class="col-md-4 mb-4"><div class="card">
+<img src="images/sql.png" class="card-img-top">
+<div class="card-body"><h5>BDD SQL</h5><a href="SQL.pdf" class="btn btn-primary">Voir</a></div>
+</div></div>
+
+<div class="col-md-4 mb-4"><div class="card">
+<img src="images/audit.png" class="card-img-top">
+<div class="card-body"><h5>Audit</h5><a href="Audit.pdf" class="btn btn-primary">Voir</a></div>
+</div></div>
+
+<div class="col-md-4 mb-4"><div class="card">
+<img src="images/veille.png" class="card-img-top">
+<div class="card-body"><h5>Veille informationnelle</h5>
+<a href="Xavier_Comparatif.pdf" class="btn btn-primary">PDF</a>
+<a href="tbl_compa.pdf" class="btn btn-secondary">Tableau</a>
+</div></div></div>
+
+<div class="col-md-4 mb-4"><div class="card">
+<img src="images/pgp.png" class="card-img-top">
+<div class="card-body"><h5>PGP</h5><a href="PGP.pdf" class="btn btn-primary">Voir</a></div>
+</div></div>
+
+</div>
+</div>
+
+<!-- ================= PARTIE 2 : SOTOCA ================= -->
+<div id="part2" style="display:none;">
+
+    <div class="row">
+
+        <!-- PC en panne -->
+        <div class="col-md-4 mb-4">
+            <div class="card project-card">
+                <img src="images/pc_panne.jpg" class="card-img-top" alt="PC en panne">
+                <div class="card-body">
+                    <h5 class="card-title">PC en panne</h5>
+                    <a href="TP2.pdf" target="_blank" class="btn btn-primary">Voir le compte rendu</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Logiciel de capture -->
+        <div class="col-md-4 mb-4">
+            <div class="card project-card">
+                <img src="images/capture.jpg" class="card-img-top" alt="Logiciel de capture">
+                <div class="card-body">
+                    <h5 class="card-title">Logiciel de capture</h5>
+                    <a href="TP6.pdf" target="_blank" class="btn btn-primary">Voir le compte rendu</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Logiciel de diagnostic -->
+        <div class="col-md-4 mb-4">
+            <div class="card project-card">
+                <img src="images/diagnostic.jpg" class="card-img-top" alt="Logiciel de diagnostic">
+                <div class="card-body">
+                    <h5 class="card-title">Logiciel de diagnostic</h5>
+                    <a href="TP7.pdf" target="_blank" class="btn btn-primary">Voir le compte rendu</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Serveur NAS -->
+        <div class="col-md-4 mb-4">
+            <div class="card project-card">
+                <img src="images/nas.jpg" class="card-img-top" alt="Serveur NAS">
+                <div class="card-body">
+                    <h5 class="card-title">Serveur NAS</h5>
+                    <a href="nas.pdf" target="_blank" class="btn btn-primary">Voir le compte rendu</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- CMD 40 questions -->
+        <div class="col-md-4 mb-4">
+            <div class="card project-card">
+                <img src="images/cmd.jpg" class="card-img-top" alt="CMD 40 questions">
+                <div class="card-body">
+                    <h5 class="card-title">CMD – 40 questions</h5>
+                    <a href="tpsotoca.pdf" target="_blank" class="btn btn-primary">Voir le compte rendu</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hachage -->
+        <div class="col-md-4 mb-4">
+            <div class="card project-card">
+                <img src="images/hachage.jpg" class="card-img-top" alt="Hachage">
+                <div class="card-body">
+                    <h5 class="card-title">Hachage</h5>
+                    <a href="TP_cyber.pdf" target="_blank" class="btn btn-primary">Voir le compte rendu</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- CMD commande -->
+        <div class="col-md-4 mb-4">
+            <div class="card project-card">
+                <img src="images/cmd_commande.jpg" class="card-img-top" alt="CMD commande">
+                <div class="card-body">
+                    <h5 class="card-title">CMD – Commandes</h5>
+                    <a href="TP12.pdf" target="_blank" class="btn btn-primary">Compte rendu</a>
+                    <a href="cartemental.pdf" target="_blank" class="btn btn-secondary">Carte mentale</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cahier des charges -->
+        <div class="col-md-4 mb-4">
+            <div class="card project-card">
+                <img src="images/cahier.jpg" class="card-img-top" alt="Cahier des charges">
+                <div class="card-body">
+                    <h5 class="card-title">Cahier des charges</h5>
+                    <a href="Cahier.pdf" target="_blank" class="btn btn-primary">Compte rendu</a>
+                    <a href="memento_gsb.csv" target="_blank" class="btn btn-secondary">Annexe</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- GSB Site -->
+        <div class="col-md-4 mb-4">
+            <div class="card project-card">
+                <img src="images/gsb.jpg" class="card-img-top" alt="GSB Site">
+                <div class="card-body">
+                    <h5 class="card-title">GSB – Site Web</h5>
+                    <a href="truc_vieu.pdf" target="_blank" class="btn btn-primary">Compte rendu</a>
+                    <a href="GSB_Site.zip" target="_blank" class="btn btn-secondary">Code</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scénario -->
+        <div class="col-md-4 mb-4">
+            <div class="card project-card">
+                <img src="images/scenario.jpg" class="card-img-top" alt="Scénario">
+                <div class="card-body">
+                    <h5 class="card-title">Scénario</h5>
+                    <a href="Scenario.pdf" target="_blank" class="btn btn-primary">Voir le compte rendu</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Disque -->
+        <div class="col-md-4 mb-4">
+            <div class="card project-card">
+                <img src="images/disque.jpg" class="card-img-top" alt="Disque">
+                <div class="card-body">
+                    <h5 class="card-title">Disque</h5>
+                    <a href="Disque.pdf" target="_blank" class="btn btn-primary">Voir le compte rendu</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hébergement -->
+        <div class="col-md-4 mb-4">
+            <div class="card project-card">
+                <img src="images/hebergement.jpg" class="card-img-top" alt="Hébergement">
+                <div class="card-body">
+                    <h5 class="card-title">Hébergement</h5>
+                    <a href="herbergement.pdf" target="_blank" class="btn btn-primary">Voir le compte rendu</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Prise de contrôle -->
+        <div class="col-md-4 mb-4">
+            <div class="card project-card">
+                <img src="images/prise_controle.jpg" class="card-img-top" alt="Prise de contrôle">
+                <div class="card-body">
+                    <h5 class="card-title">Prise de contrôle</h5>
+                    <a href="Prise de controle.pdf" target="_blank" class="btn btn-primary">Voir le compte rendu</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Clonage -->
+        <div class="col-md-4 mb-4">
+            <div class="card project-card">
+                <img src="images/clonage.jpg" class="card-img-top" alt="Clonage">
+                <div class="card-body">
+                    <h5 class="card-title">Clônage</h5>
+                    <a href="clonage.pdf" target="_blank" class="btn btn-primary">Voir le compte rendu</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</div>
+</section>
+
+<div class="text-center mb-4">
+<a href="index.html" class="btn btn-secondary">← Retour</a>
+</div>
+
+<script>
+showPart1.onclick = () => { part1.style.display="block"; part2.style.display="none"; }
+showPart2.onclick = () => { part1.style.display="none"; part2.style.display="block"; }
+</script>
+
 </body>
 </html>
-
-
-
